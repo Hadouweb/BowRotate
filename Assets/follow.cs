@@ -14,6 +14,7 @@ public class follow : MonoBehaviour {
 		Quaternion rot = Quaternion.LookRotation (deltaPos, left.transform.TransformDirection (Vector3.forward));
 
 		transform.rotation = rot;
+		transform.position = left.transform.position;
 
 	}
 
